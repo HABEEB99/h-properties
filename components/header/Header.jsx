@@ -10,18 +10,22 @@ const Header = () => {
     <header className="bg-header h-[8vh] w-screen px-6 md:px-12 lg:px-32 flex items-center justify-between">
       <div className="flex items-center">
         <SiHomeadvisor className="font-bold text-4xl text-logo" />
-        <h1 className="font-bold text-logo text-xl">H-Properties</h1>
+        <h1 className="font-bold text-logo text-xl">HBO-Properties</h1>
       </div>
 
       <nav className="flex items-center">
         <NavItem path="/" title="Home" Icon={FaHome} />
         <NavItem path="/search" title="Search" Icon={FaSearch} />
-        <NavItem path="/buy" title="Buy" Icon={FaKey} />
-        <NavItem path="/rent" title="Rent" Icon={GiReceiveMoney} />
+        <NavItem path="/search?purpose=for-sale" title="Buy" Icon={FaKey} />
+        <NavItem
+          path="/search?purpose=for-rent"
+          title="Rent"
+          Icon={GiReceiveMoney}
+        />
       </nav>
 
-      <div className=''>
-        <BsPersonCircle className='text-3xl font-bold text-green-300'/>
+      <div className="">
+        <BsPersonCircle className="text-3xl font-bold text-green-300" />
       </div>
     </header>
   );
