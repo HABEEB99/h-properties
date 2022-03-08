@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Layout from '../components/layout/Layout';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps,router }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence>
       <motion.div

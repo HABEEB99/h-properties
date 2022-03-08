@@ -5,7 +5,7 @@ import millify from 'millify';
 import { MdBed, MdVerifiedUser } from 'react-icons/md';
 import { GiBathtub } from 'react-icons/gi';
 import { BsGridFill } from 'react-icons/bs';
-import { data } from 'autoprefixer';
+// import { data } from 'autoprefixer';
 import { motion } from 'framer-motion';
 
 const Property = ({
@@ -13,7 +13,7 @@ const Property = ({
     area,
     agency,
     isVerified,
-    externalId,
+    externalID,
     price,
     title,
     rooms,
@@ -23,7 +23,7 @@ const Property = ({
   },
 }) => {
   return (
-    <Link href={`/property/${externalId}`} passHref>
+    <Link href={`/property/${externalID}`} passHref>
       <motion.div
         whileHover={{
           scale: [1, 1.4, 1.2],
