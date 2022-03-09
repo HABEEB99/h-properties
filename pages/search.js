@@ -3,12 +3,22 @@ import { useRouter } from 'next/router';
 import SearchBar from '../components/search-bar/SearchBar';
 import { fetchApi, baseUrl } from '../lib/fetchApi';
 import Property from '../components/property/Property';
+import { BsArrow90DegDown } from 'react-icons/bs';
 
 const Search = ({ properties }) => {
   const router = useRouter();
   return (
     <div className="px-6 md:px-12 lg:px-32 bg-body w-screen">
-      <h2>Properties {router.query.purpose}</h2>
+      <h2 className="text-xl md:text-2xl lg:text-4xl text-gray-600 font-bold">
+        Properties {router.query.purpose}
+      </h2>
+
+      <div className="flex items-center justify-center my-3">
+        <BsArrow90DegDown className="text-3xl font-bold text-logo mt-4" />
+        <h2 className="text-xl md:text-2xl lg:text-3xl text-btn font-bold">
+          Search by filtering the parameters below{' '}
+        </h2>
+      </div>
       <SearchBar />
 
       <div className=" flex items-center justify-around flex-wrap">

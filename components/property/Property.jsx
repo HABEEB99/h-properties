@@ -41,7 +41,7 @@ const Property = ({
           zIndex: 1,
           background: 'white',
         }}
-        className="w-[32.5%] h-[50vh] flex flex-col py-2 items-center rounded-lg bg-header shadow-2xl mt-4 mr-2"
+        className="w-[100%] md:w-[48%] lg:w-[32.7%] h-[50vh] flex flex-col py-2 items-center rounded-lg bg-header shadow-2xl mt-4 mr-2"
       >
         <h2 className="mb-2 font-bold text-gray-500 text-lg">
           {title.length > 30 ? `${title.substring(0, 30)}....` : title}
@@ -71,8 +71,6 @@ const Property = ({
           <span className="text-logo mx-2 font-bold">|</span>
           {millify(area)} sqft <BsGridFill className="text-btn ml-1" />
         </div>
-
-        {/*   <Image src={agency?.logo?.url} width={80} height={20} alt="logo" />*/}
       </motion.div>
     </Link>
   );
