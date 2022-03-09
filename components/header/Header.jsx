@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SiHomeadvisor } from 'react-icons/si';
 import NavItem from './NavItem';
-import { FaHome, FaKey, FaSearch } from 'react-icons/fa';
+import { FaHome, FaKey, FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 import { GiReceiveMoney } from 'react-icons/gi';
 import { BsPersonCircle } from 'react-icons/bs';
+import MobileNav from '../mobile-nav/MobileNav';
 
 const Header = () => {
+  const [openMobileNav, setOpenMobileNav] = useState(false);
+  const handleMobileNav = () => {
+    setOpenMobileNav(!openMobileNav);
+  };
   return (
     <header className="bg-header h-[8vh] w-screen px-6 md:px-12 lg:px-32 flex items-center justify-between">
       <div className="flex items-center">
@@ -13,7 +18,7 @@ const Header = () => {
         <h1 className="font-bold text-logo text-xl">HBO-Properties</h1>
       </div>
 
-      <nav className="flex items-center">
+      <nav className="lg:flex lg:items-center hidden lg:block">
         <NavItem path="/" title="Home" Icon={FaHome} />
         <NavItem path="/search" title="Search" Icon={FaSearch} />
         <NavItem path="/search?purpose=for-sale" title="Buy" Icon={FaKey} />
@@ -27,6 +32,16 @@ const Header = () => {
       <div className="">
         <BsPersonCircle className="text-3xl font-bold text-green-300" />
       </div>
+
+      <div onClick={handleMobileNav} className="block lg:hidden">
+        {openMobileNav ? (
+          <FaBars className="text-4xl text-btn font-bold hover:text-green-500" />
+        ) : (
+          <FaTimes className="text-4xl text-btn font-bold hover:text-red-500" />
+        )}
+      </div>
+
+      <MobileNav openMobileNav={openMobileNav} />
     </header>
   );
 };
