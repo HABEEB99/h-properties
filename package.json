@@ -1,30 +1,33 @@
 {
-  "name": "h-properties",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "axios": "^0.26.0",
-    "framer-motion": "^6.2.8",
-    "millify": "^4.0.0",
-    "next": "12.1.0",
-    "nprogress": "^0.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-horizontal-scrolling-menu": "^2.7.1",
-    "react-icons": "^4.3.1",
-    "react-responsive-carousel": "^3.2.23"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
-    "postcss": "^8.4.7",
-    "tailwindcss": "^3.0.23"
-  }
+	"name": "h-properties",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"axios": "^0.26.0",
+		"framer-motion": "^6.2.8",
+		"millify": "^4.0.0",
+		"next": "12.1.0",
+		"nextjs-progressbar": "^0.0.14",
+		"nprogress": "^0.2.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-horizontal-scrolling-menu": "^2.7.1",
+		"react-icons": "^4.3.1",
+		"react-responsive-carousel": "^3.2.23",
+		"tailwind-scrollbar": "^1.3.1",
+		"tailwind-scrollbar-hide": "^1.1.7"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"eslint": "8.10.0",
+		"eslint-config-next": "12.1.0",
+		"postcss": "^8.4.7",
+		"tailwindcss": "^3.0.23"
+	}
 }
