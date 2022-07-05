@@ -10,23 +10,6 @@
 		scroll-behavior: smooth;
 	}
 	body {
-		@apply bg-body !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-blue-800 hover:scrollbar-thumb-btn;
+		@apply bg-body dark:bg-gray-800   !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-blue-800 hover:scrollbar-thumb-btn;
 	}
 }
-
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-} */

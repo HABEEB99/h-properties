@@ -39,11 +39,11 @@ const Property = ({
 					},
 					position: 'relative',
 					zIndex: 1,
-					background: 'white',
+					background: 'gray',
 				}}
-				className="w-full md:w-[48%] lg:w-[32.7%] h-[50vh] flex flex-col py-2 items-center rounded-lg bg-header shadow-2xl mt-4"
+				className="w-full md:w-[48%] lg:w-[32.7%] h-[50vh] flex flex-col py-2 items-center rounded-lg bg-header dark:bg-gray-500 shadow-2xl mt-4"
 			>
-				<h2 className="mb-2 font-bold text-gray-500 text-lg">
+				<h2 className="mb-2 font-bold text-gray-500 text-lg dark:text-gray-200">
 					{title.length > 30 ? `${title.substring(0, 30)}....` : title}
 				</h2>
 

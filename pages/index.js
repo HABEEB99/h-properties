@@ -29,7 +29,7 @@ export default function Home({ forSale, forRent }) {
 				<link rel="icon" href="/real-estate.png" />
 			</Head>
 
-			<h1 className=" py-4 text-4xl font-bold text-gray-600">
+			<h1 className=" py-4 text-4xl font-bold text-gray-600 dark:text-gray-100">
 				Buy or Rent a Property
 			</h1>
 			<div className="flex items-center justify-around flex-wrap   ">
